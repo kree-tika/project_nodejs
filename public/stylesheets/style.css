@@ -1,0 +1,11 @@
+.div-4{
+height: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 2px solid black;
+}
+.user{
+    border-radius: none;
+    display: inline-flex;
+}
