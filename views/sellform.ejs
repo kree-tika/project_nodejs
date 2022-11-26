@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="container navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/images/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Books
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/novels">Novels</a></li>
+                            <li><a class="dropdown-item" href="/used">Used Books</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Membership Plan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/sellform">Selling Policies</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-3" role="search">
+                    <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-cart m-2" viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-person m-2" viewBox="0 0 16 16">
+                    <path
+                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                </svg>
+
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="display-8 fw-bold">Selling policies</h2>
+        <ul class="flex-row">
+            <li>Should fill the form to sell your old boooks(Novels/Textbooks).</li>
+            <li>Should make the published date visible in the photo for Textbooks category.</li>
+            <li>Books should be in good condition(teared books,damaged books are not allowed).</li>
+            <li>Should wait for the confirmation from us(books are selected to sell).</li>
+            <li>Should wait for customer availability.</li>
+        </ul>
+
+        <p class="lead mb-4">If you are okay with above policies, feel free to fill out the form.</p>
+        
+        <form method="post" action="/selldata">
+            <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" class="form-control" name="name" placeholder="John Green">
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" name="email" placeholder="john@gmail.com">
+            </div>
+
+            <div class="form-group">
+                <label>Address</label>
+                <input type="text" class="form-control" name="address" placeholder="Sankhamul">
+            </div>
+
+            <div class="form-group">
+                <label>City</label>
+                <input type="text" class="form-control" name="city" placeholder="Kathmandu">
+            </div>
+
+            <div class="form-group">
+                <label>Book Name</label>
+                <input type="text" class="form-control" name="bookname" placeholder="Ugly Love">
+            </div>
+
+            <label>Category</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="category" checked>
+                <label class="form-check-label">
+                  Novels
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="category">
+                <label class="form-check-label">
+                  Textbooks
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label>Your Book price</label>
+                <input type="number" class="form-control" name="price" placeholder="350">
+            </div>
+
+            <label class="form-label">Book Photos</label>
+            <div class="form-control">
+                <input class="form-control" type="file" name="photo" multiple>
+            </div>
+
+            <button class="btn btn-success" type="submit">SUBMIT</button>
+        </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

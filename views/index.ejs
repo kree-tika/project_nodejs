@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <header>
   <nav class="container navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
@@ -38,10 +39,10 @@
             <a class="nav-link" href="/about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Membership Plan</a>
+            <a class="nav-link" href="/plan">Membership Plan</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Selling Policies</a>
+            <a class="nav-link" href="/sellform">Selling Policies</a>
           </li>
         </ul>
         <form class="d-flex ms-3" role="search">
@@ -50,14 +51,15 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart m-2" viewBox="0 0 16 16">
             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
           </svg>
+          <a class="nav-link" class="btn" href="/signup">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person m-2" viewBox="0 0 16 16">
             <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
           </svg>
-        
-
+        </a>
       </div>
     </div>
   </nav>
+</header>
 
   <div class="container text-left">
     <div class="d-flex justify-content-center align-items-center">
@@ -68,7 +70,7 @@
             delectus maxime, voluptatum iusto recusandae dignissimos beatae ipsum porro, temporibus eaque blanditiis
             ipsam
             dolor placeat consequuntur?</P>
-          <button class="btn btn-success" type="submit">Rent</button>
+          <a href="/plan" class="btn btn-success">RENT</a>
         </div>
       </div>
       <div class="col-12 col-lg-6">
@@ -77,117 +79,126 @@
     </div>
 
     <div class="container text-left">
-      <h2>NEW ARRIVALS</h2>
+      <div class="d-flex align-items-center justify-content-between">
+          <h2>NEW ARRIVALS</h2>
+          <a href="/novels" class="btn btn-success">Explore More</a>
+          </div>
       <div class="row my-5">
-        <div class="col-sm-3">
-          <div class="card" style="width: 18rem;">
-            <img src="/images/all-the-bright-places.jpg" class="card-img-top" alt="all-the-bright-places">
-            <div class="card-body">
-              <h5 class="card-title">ALL THE BRIGHT PLACES</h5>
-              <h6 class="card-subtitle mb-2 text-muted">by Jennifer Niven</h6>
-              <p class="card-text">NPR 350</p>
-              <a href="#" class="btn btn-primary">Rent</a>
-              <a href="#" class="btn btn-secondary">Add to Cart</a>
-            </div>
+          <div class="col-sm-3">
+              <div class="card" style="width: 16rem;">
+                <a href="/singlepage">
+                  <img src="/images/all-the-bright-places.jpg" class="card-img-top" alt="all-the-bright-places">
+                </a>
+                  <div class="card-body">
+                      <h5 class="card-title">ALL THE BRIGHT PLACES</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">by Jennifer Niven</h6>
+                      <p class="card-text">NPR 350</p>
+                      <a href="/plan" class="btn btn-primary">Rent</a>
+                      <a href="#" class="btn btn-secondary">Add to Cart</a>
+                  </div>
+              </div>
           </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="card" style="width: 18rem;">
-            <img src="/images/normal-people.jpg" class="card-img-top" alt="normal-people">
-            <div class="card-body">
-              <h5 class="card-title">NORMAL PEOPLE</h5>
-              <h6 class="card-subtitle mb-2 text-muted">by Sally Rooney</h6>
-              <p class="card-text">NPR 350</p>
-              <a href="#" class="btn btn-primary">Rent</a>
-              <a href="#" class="btn btn-secondary">Add to cart</a>
-            </div>
+          <div class="col-sm-3">
+              <div class="card" style="width: 16rem;">
+                  <img src="/images/normal-people.jpg" class="card-img-top" alt="normal-people">
+                  <div class="card-body">
+                      <h5 class="card-title">NORMAL PEOPLE</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">by Sally Rooney</h6>
+                      <p class="card-text">NPR 350</p>
+                      <a href="/plan" class="btn btn-primary">Rent</a>
+                      <a href="#" class="btn btn-secondary">Add to cart</a>
+                  </div>
+              </div>
           </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="card" style="width: 18rem;">
-            <img src="/images/beautiful-world.jpg" class="card-img-top" alt="beautiful-world">
-            <div class="card-body">
-              <h5 class="card-title">BEAUTIFUL WORLD</h5>
-              <h6 class="card-subtitle mb-2 text-muted">by Sally Rooney</h6>
-              <p class="card-text">NPR 450</p>
-              <a href="#" class="btn btn-primary">Rent</a>
-              <a href="#" class="btn btn-secondary">Add to cart</a>
-            </div>
+          <div class="col-sm-3">
+              <div class="card" style="width: 16rem;">
+                  <img src="/images/beautiful-world.jpg" class="card-img-top" alt="beautiful-world">
+                  <div class="card-body">
+                      <h5 class="card-title">BEAUTIFUL WORLD</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">by Sally Rooney</h6>
+                      <p class="card-text">NPR 450</p>
+                      <a href="#" class="btn btn-primary">Rent</a>
+                      <a href="#" class="btn btn-secondary">Add to cart</a>
+                  </div>
+              </div>
           </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="card" style="width: 18rem;">
-            <img src="/images/spanish-love.jpg" class="card-img-top" alt="spanish-love">
-            <div class="card-body">
-              <h5 class="card-title">SPANISH LOVE DECEPTION</h5>
-              <h6 class="card-subtitle mb-2 text-muted">by Elena Armas</h6>
-              <p class="card-text">NPR 450</p>
-              <a href="#" class="btn btn-primary">Rent</a>
-              <a href="#" class="btn btn-secondary">Add to cart</a>
-            </div>
+          <div class="col-sm-3">
+              <div class="card" style="width: 16rem;">
+                  <img src="/images/spanish-love.jpg" class="card-img-top" alt="spanish-love">
+                  <div class="card-body">
+                      <h5 class="card-title">SPANISH LOVE DECEPTION</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">by Elena Armas</h6>
+                      <p class="card-text">NPR 450</p>
+                      <a href="#" class="btn btn-primary">Rent</a>
+                      <a href="#" class="btn btn-secondary">Add to cart</a>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
 
       <div class="container text-left">
-        <h2>BEST SELLERS</h2>
-        <div class="row my-5">
-          <div class="col-sm-3">
-            <div class="card" style="width: 18rem;">
-              <img src="/images/all-the-bright-places.jpg" class="card-img-top" alt="all-the-bright-places">
-              <div class="card-body">
-                <h5 class="card-title">ALL THE BRIGHT PLACES</h5>
-                <h6 class="card-subtitle mb-2 text-muted">by Jennifer Niven</h6>
-                <p class="card-text">NPR 350</p>
-                <a href="#" class="btn btn-primary">Rent</a>
-                <a href="#" class="btn btn-secondary">Add to Cart</a>
-              </div>
-            </div>
+          <div class="d-flex align-items-center justify-content-between">
+          <h2>BEST SELLERS</h2>
+          <a href="/used" class="btn btn-success">Explore More</a>
           </div>
-          <div class="col-sm-3">
-            <div class="card" style="width: 18rem;">
-              <img src="/images/normal-people.jpg" class="card-img-top" alt="normal-people">
-              <div class="card-body">
-                <h5 class="card-title">NORMAL PEOPLE</h5>
-                <h6 class="card-subtitle mb-2 text-muted">by Sally Rooney</h6>
-                <p class="card-text">NPR 350</p>
-                <a href="#" class="btn btn-primary">Rent</a>
-                <a href="#" class="btn btn-secondary">Add to cart</a>
+          <div class="row my-5">
+              <div class="col-sm-3">
+                  <div class="card" style="width: 16rem;">
+                      <img src="/images/all-the-bright-places.jpg" class="card-img-top"
+                          alt="all-the-bright-places">
+                      <div class="card-body">
+                          <h5 class="card-title">ALL THE BRIGHT PLACES</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">by Jennifer Niven</h6>
+                          <p class="card-text">NPR 350</p>
+                          <a href="#" class="btn btn-primary">Rent</a>
+                          <a href="#" class="btn btn-secondary">Add to Cart</a>
+                      </div>
+                  </div>
               </div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="card" style="width: 18rem;">
-              <img src="/images/beautiful-world.jpg" class="card-img-top" alt="beautiful-world">
-              <div class="card-body">
-                <h5 class="card-title">BEAUTIFUL WORLD</h5>
-                <h6 class="card-subtitle mb-2 text-muted">by Sally Rooney</h6>
-                <p class="card-text">NPR 450</p>
-                <a href="#" class="btn btn-primary">Rent</a>
-                <a href="#" class="btn btn-secondary">Add to cart</a>
+              <div class="col-sm-3">
+                  <div class="card" style="width: 16rem;">
+                      <img src="/images/normal-people.jpg" class="card-img-top" alt="normal-people">
+                      <div class="card-body">
+                          <h5 class="card-title">NORMAL PEOPLE</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">by Sally Rooney</h6>
+                          <p class="card-text">NPR 350</p>
+                          <a href="#" class="btn btn-primary">Rent</a>
+                          <a href="#" class="btn btn-secondary">Add to cart</a>
+                      </div>
+                  </div>
               </div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="card" style="width: 18rem;">
-              <img src="/images/spanish-love.jpg" class="card-img-top" alt="spanish-love">
-              <div class="card-body">
-                <h5 class="card-title">SPANISH LOVE DECEPTION</h5>
-                <h6 class="card-subtitle mb-2 text-muted">by Elena Armas</h6>
-                <p class="card-text">NPR 450</p>
-                <a href="#" class="btn btn-primary">Rent</a>
-                <a href="#" class="btn btn-secondary">Add to cart</a>
+              <div class="col-sm-3">
+                  <div class="card" style="width: 16rem;">
+                      <img src="/images/beautiful-world.jpg" class="card-img-top" alt="beautiful-world">
+                      <div class="card-body">
+                          <h5 class="card-title">BEAUTIFUL WORLD</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">by Sally Rooney</h6>
+                          <p class="card-text">NPR 450</p>
+                          <a href="#" class="btn btn-primary">Rent</a>
+                          <a href="#" class="btn btn-secondary">Add to cart</a>
+                      </div>
+                  </div>
               </div>
-            </div>
+              <div class="col-sm-3">
+                  <div class="card" style="width: 16rem;">
+                      <img src="/images/spanish-love.jpg" class="card-img-top" alt="spanish-love">
+                      <div class="card-body">
+                          <h5 class="card-title">SPANISH LOVE DECEPTION</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">by Elena Armas</h6>
+                          <p class="card-text">NPR 450</p>
+                          <a href="#" class="btn btn-primary">Rent</a>
+                          <a href="#" class="btn btn-secondary">Add to cart</a>
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
 
     <section class="px-4 py-5 my-5 text-center">
       <h2 class="display-8 fw-bold">Have old books you want to sell?</h2>
       <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">Find out our selling policies <a href="#">HERE</a>.</p>
+        <p class="lead mb-4">Find out our selling policies <a href="/sellform">HERE</a>.</p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <a href="/sellingform" class="btn btn-success">FILL OUT THE FORM</a>
+          <a href="/sellform" class="btn btn-success">FILL OUT THE FORM</a>
         </div>
       </div>
     </section>
@@ -223,6 +234,7 @@
           </div>
     </section>
 
+<!-- Footer section -->
     <div class="container">
       <footer class="py-3 my-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
@@ -282,10 +294,8 @@
         <p class="text-center text-muted mb-0">© 2022 Company, Inc</p>
       </footer>
     </div>
+<!-- Footer section ends -->
 
-    
-    
-       
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
