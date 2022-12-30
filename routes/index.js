@@ -1,8 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var product = require('../models/product');
-var selldb = require('../models/selldata');
-
+const Selldb = require('../models/selldata');
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Home' });
@@ -23,7 +22,7 @@ router.get('/plan', function(req, res, next) {
   res.render('plan', { title: 'Membership plan' });
 });
 router.post('/selldata', async function(req, res, next) {
-  await selldb.insertMany([{
+  await Selldb.insertMany([{
       name: req.body.name,
       email: req.body.email,
       address: req.body.address,
